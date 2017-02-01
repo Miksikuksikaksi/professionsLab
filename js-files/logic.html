@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Loops</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+	    
+		<div id="content">
+		</div>
+		
+		<script>
+			$(document).ready(function() {
+				
+				var number1	= 2;
+				var number2	= 5;
+				
+				if(number1 < number2) {
+					$("#content").append("Number1 rummer et mindre tal end number2.");
+				} else {
+					$("#content").append("Number2 rummer et mindre tal end number1.");
+				}	
+
+			});
+		</script>
+    </body>
+</html>

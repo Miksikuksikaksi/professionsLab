@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Loops</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+		<p></p>
+		
+		<script>
+			$(document).ready(function() {
+				
+				var name = 'Michael';
+				var age = 46;
+				
+				function nameAge(name, age) {
+					$("p").append("Mit navn er " + name + " " + ", og jeg er " + age);
+				}
+				
+				nameAge(name, age);
+
+			});
+		</script>
+    </body>
+</html>

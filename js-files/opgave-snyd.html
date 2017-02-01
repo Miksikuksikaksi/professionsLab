@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Jquery-eksempel til Professionslab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+		
+		<form>
+			
+			<label for="money">Her er, hvad jeg har på bankkontoen:</label>
+			<input type="number" id="money">
+			
+			<br>
+			
+			<!- lav nyt input felt med ny id ->
+			<label for="price">Her er prisen på skiferien:</label>
+			<input type="number" id="price">
+			
+		</form>
+		<button id="clicker">
+		  Hvad bliver det til?
+		</button>
+		
+		<br>
+		
+		<h1 id="content">
+			<!-- her kommer indhold fra js -->
+		</h1>
+		  	
+		<script>
+			$(document).ready(function() {
+
+				$("#clicker").click(function() {
+					
+			  	var numb1 = $("#money").val();
+			    // set numb2 = værdi fra nyt inputfelt
+			    var numb2 = $("#price").val();
+				
+				if(numb1 > numb2) {
+					$("#content").append("Yes, afsted til Val Thorens.");
+				} else {
+			  		$("#content").append("Pokkers, igen svigermors sommerhus på Ærø.");
+			  	};
+			  
+			  });
+			
+			});
+		</script>
+	
+    </body>
+</html>
